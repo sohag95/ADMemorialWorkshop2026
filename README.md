@@ -43,12 +43,4 @@ http://localhost:8080
 - All images should be placed inside the `images` folder.
 - Updates can be made by editing the HTML and CSS files.
 
-## Maintainer
 
-Sohag Roy  
-PhD Scholar  
-Department of Computer Science
-
-## License
-
-This project is intended for academic and informational purposes.
