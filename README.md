@@ -11,7 +11,7 @@ The website presents essential information related to the workshop, including th
 
  ├── styles.css      # CSS file for styling and layout 
 
- ├── images/         # Images used on the website (speakers, logos, etc.) 
+ ├── images/         # Images used on the website  
 
  └── README.md       # Project documentation
 
