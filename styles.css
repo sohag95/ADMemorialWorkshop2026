@@ -1,0 +1,213 @@
+
+    body {
+      scroll-behavior: smooth;
+    }
+
+    .alignment{
+      text-align: justify; 
+      text-justify: inter-word;
+    }
+    
+    /* Hero */
+    .hero {
+      background: linear-gradient(135deg, #1e3a8a, #2563eb);
+      color: white;
+      padding: 100px 20px 40px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle, rgba(255,255,255,0.15) 20%, transparent 70%);
+      animation: rotate 20s linear infinite;
+    }
+    @keyframes rotate {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+    .hero p {
+      font-size: 1.2rem;
+    }
+
+    /* Medium devices (tablets, 768px and up) */
+    @media (max-width: 992px) {
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+      .hero h2 {
+        font-size: 1.5rem;
+      }
+      .hero p {
+        font-size: 1rem;
+      }
+    }
+
+    /* Small devices (landscape phones, 576px and up) */
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+      .hero h2 {
+        font-size: 1.2rem;
+      }
+      .hero p {
+        font-size: 0.95rem;
+      }
+    }
+
+    /* Extra small devices (phones) */
+    @media (max-width: 576px) {
+      .hero h1 {
+        font-size: 1.6rem;
+      }
+      .hero h2 {
+        font-size: 1rem;
+      }
+      .hero p {
+        font-size: 0.9rem;
+      }
+    }
+    
+    .card-img-top {
+    width: 100%;
+    height: 250px;   /* you can adjust this number to make images taller/shorter */
+    object-fit: cover;  /* crops and fills proportionally */
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    }
+
+    /* Tribute */
+    .tribute {
+      padding: 10px 20px;
+      background: #fff;
+      border-top: 5px solid #2563eb;
+      border-bottom: 5px solid #2563eb;
+    }
+    .tribute_img {
+      border-radius: 12px;
+      max-width: 270px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+    }
+    .tribute_img_side {
+      border-radius: 12px;
+      max-width: 280px;
+      box-shadow: 0 ;
+    }
+    .tribute blockquote {
+      font-size: 1.4rem;
+      font-style: italic;
+      border-left: 5px solid #2563eb;
+      padding-left: 20px;
+      color: #333;
+    }
+
+    .tribute-row {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start; /* keeps top aligned */
+      gap: 20px; /* space between images */
+      flex-wrap: nowrap; /* prevents breaking into new line */
+    }
+
+    .tribute_main {
+      text-align: center;
+    }
+
+    .tribute_caption {
+      margin-top: 10px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #333;
+    }
+
+
+    
+    /* Medium devices (tablets) */
+    @media (max-width: 992px) {
+      .tribute img {
+        width: 200px;
+      }
+      .tribute blockquote {
+        font-size: 1.1rem;
+      }
+      .logo{
+        width:9rem ;
+      }
+    }
+
+    /* Small devices (landscape phones) */
+    @media (max-width: 768px) {
+      .tribute {
+        padding: 19px 15px 12px
+      }
+      .tribute img {
+        width: 160px;
+        margin-bottom: 20px;
+      }
+      .tribute blockquote {
+        font-size: 1rem;
+      }
+      .logo{
+        width:8rem ;
+      }
+      .tribute_caption {
+        margin-top: 0px;
+        font-size: 1rem;
+      }
+    }
+
+    /* Extra small devices (phones) */
+    @media (max-width: 576px) {
+      .tribute img {
+        width: 130px;
+      }
+      .tribute blockquote {
+        font-size: 0.95rem;
+      }
+      .logo{
+        width:6rem ;
+      }
+      .tribute_caption {
+        margin-top: 0px;
+        font-size: .7rem;
+      }
+    }
+    /* Speakers */
+    .speaker-card {
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .speaker-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+    }
+
+    /* Schedule */
+    #schedule table tbody tr:hover {
+      background-color: #f0f4ff;
+    }
+
+    /* Footer */
+    footer {
+      background: linear-gradient(135deg, #1e40af, #1e3a8a);
+      color: white;
+      text-align: center;
+      padding: 25px;
+      font-size: 0.9rem;
+    }
+
+    /* Scrollspy highlight */
+    .navbar .nav-link.active {
+      color: #2563eb !important;
+      font-weight: 600;
+    }
+  
