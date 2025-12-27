@@ -7,10 +7,13 @@ The website presents essential information related to the workshop, including th
 ## Repository Structure
 
 .
-├── index.html      # Main HTML file for the workshop webpage
-├── styles.css      # CSS file for styling and layout
-├── images/         # Images used on the website (speakers, logos, etc.)
-└── README.md       # Project documentation
+├── index.html      # Main HTML file for the workshop webpage 
+
+ ├── styles.css      # CSS file for styling and layout 
+
+ ├── images/         # Images used on the website (speakers, logos, etc.) 
+
+ └── README.md       # Project documentation
 
 ## Website Content
 
@@ -18,7 +21,7 @@ The webpage includes:
 - Workshop title and overview
 - Schedule / timetable of sessions
 - Speaker information
-- Academic event layout
+- Committee details
 
 ## Technologies Used
 
